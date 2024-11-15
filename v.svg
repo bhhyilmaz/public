@@ -1,0 +1,24 @@
+<!-- 
+Merhaba Eksi Sozluk :)
+-->
+
+<svg viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="lorenz-sistemi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0000" />
+      <stop offset="100%" stop-color="#0000ff" />
+    </linearGradient>
+  </defs>
+  
+  <path id="lorenz-p" fill="none" stroke="url(#lorenz-sistemi)" stroke-width="1.5"
+    d="M50,50 
+       C20,10 80,10 100,50 
+       C120,90 180,90 150,50 
+       C120,10 80,10 50,50" />
+
+  <circle r="3" fill="gold">
+    <animateMotion dur="6s" repeatCount="indefinite">
+      <mpath href="#lorenz-p" />
+    </animateMotion>
+  </circle>
+</svg>
